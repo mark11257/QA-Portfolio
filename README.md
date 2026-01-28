@@ -1,4 +1,4 @@
-# QA Portfolio – Mark rafat Sarkies
+# QA Portfolio – Mark Rafat Sarkies
 
 This repository contains my QA learning artifacts and projects:
 - ISTQB notes + flashcards
