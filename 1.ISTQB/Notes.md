@@ -1,4 +1,4 @@
-# 📕 ISTQB Glossary (Refined)
+# 📕 ISTQB Glossary 
 
 A quick-reference guide for fundamental testing terminology.
 
