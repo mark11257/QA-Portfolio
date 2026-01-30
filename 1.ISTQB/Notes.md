@@ -1,72 +1,74 @@
-# ISTQB Glossary (My Words)
+# 📕 ISTQB Glossary (Refined)
 
-- Testing: to assess software quality making sure it won't fail
-- static tesing: assessing documents to meet requirements
-- dynamic testing: assessing software itself
-- verification: check that system meets the user Requirements
-- Validation: check system meets the needs of stakeholders in environment
-- Quality assurance(QA): check the quality of process while product is being developed (documents)
-- quality control(QC/Testing): check the quality of finished product and find defects and fix it
-- Error: mistake made by man in logic or code
-- Defect: a fault in code that may cause failure
-- Failure: when the system does not do what the user expects by a defect or external environment factor
-- Effect: a bad outcome in software noticed by users due to defect
-- root cause: the main cause for error could be by human or machine or environment
-- False positive: you say it is  bug and it is not due to executing a test case wrong
-- False negative: you say no bug but there is due to poor test cases that did not cover it all
-- Severity: impact of a defect on the system/user
-- Priority: how soon it should be fixed (business urgency)
-- Regression testing: testing to ensure old features still work after changes
-- Smoke testing: quick check that main functions work in a new build
+A quick-reference guide for fundamental testing terminology.
 
-# ISTQB Notes
+| Term | Definition |
+| :--- | :--- |
+| **Testing** | Assessing software quality to ensure it meets requirements and doesn't fail. |
+| **Static Testing** | Assessing documents (requirements, code) without executing the software. |
+| **Dynamic Testing** | Assessing the software by actually running the code. |
+| **Verification** | "Are we building the product right?" (Meets requirements). |
+| **Validation** | "Are we building the right product?" (Meets stakeholder needs in its environment). |
+| **Severity** | The impact a defect has on the system or the user's ability to work. |
+| **Priority** | The business urgency—how soon the defect needs to be fixed. |
+| **Regression** | Testing to ensure old features still work after new changes or fixes. |
+| **Smoke Testing** | A "shallow and wide" check to ensure the main functions work in a new build. |
 
-## Test vs Debugging
-    Testing       |   Debugging 
-  ------------    |  -----------
-finding defects   |  locating + fixing causes of defects 
-(done by tester)  |  (done mainly by developer)
+---
+
+# ⚖️ Key Comparisons
+
+## Test vs. Debugging
+| Testing | Debugging |
+| :--- | :--- |
+| Focuses on **finding** defects. | Focuses on **locating, analyzing, and fixing** the cause. |
+| Performed primarily by **Testers**. | Performed primarily by **Developers**. |
+
+## QA vs. QC
+| Quality Assurance (QA) | Quality Control (QC) |
+| :--- | :--- |
+| **Process-oriented:** Focuses on improving the development process. | **Product-oriented:** Focuses on the finished product. |
+| Preventative: Aims to prevent defects from occurring. | Corrective: Aims to find and fix defects before release. |
+| Includes document reviews and process audits. | Includes the actual testing of the software. |
+
+## Verification vs. Validation
+| Verification | Validation |
+| :--- | :--- |
+| Checks against **Requirements**. | Checks against **User Needs**. |
+| Usually involves Static Testing (Reviews/Inspections). | Usually involves Dynamic Testing (Executing the app). |
+| "Are we following the blueprint?" | "Does the house actually work for the family?" |
+
+---
+
+# 🔄 The Defect Chain
+
+Understanding how a human mistake turns into a user complaint.
 
 
-## QA VS QC
-Quality assurance(QA)   |   Quality control(QC/Testing) 
---------------------    |  -----------------------------
-check the quality of    |       check the quality of 
-process while product   |       finished product and find 
-is being developed      |       defects and fix it
- (documents)            |
 
-## Verification vs Validation
-    Verification   |   Validation 
-    ------------   |   -----------
-check that system  |  check system meets the needs
-meets the user     |   of stakeholders in environment 
-Requirements       |    
- 
- ## Error vs Defect vs Failure
-            Leads               may 
-    Error  -------> |   Defect -----> |   Failure
-    ------   to     |   ------  lead  |   -------
-                    | a fault in code |  when the system doesn't   
-mistake made by man | that may cause  |  do what the user expects 
-in logic or code    | failure         |  by a defect or external 
-                    |                 |  enivromental Factor
-  
- ## Effect vs Defect vs Root Cause
-            Leads               may 
-    Effect -------> |   Defect -----> |   Root Cause
-    ------   to     |   ------  lead  |   -------
-                    | a fault in code | the main cause for error could be    
-a bad outcome in    | that may cause  | by human or machine or environment 
-software noticed by | failure due to  |   
-users due to defect | an error        |  
+| Stage | Description |
+| :--- | :--- |
+| **Root Cause** | The underlying reason for the mistake (e.g., lack of training, tight deadline). |
+| **Error (Mistake)** | A human action that produces an incorrect result (e.g., a logic error by a dev). |
+| **Defect (Bug/Fault)** | An imperfection in a work product (e.g., the actual bad line of code). |
+| **Failure** | An event where the system deviates from its expected delivery (The app crashes). |
+| **Effect** | The impact of the failure on the user or environment. |
 
-## False positive vs False negative
-    False positive      |   False negative 
-    --------------      |   --------------
- you say it is a bug    |   you say No bug but there is  
- and it isn't due to    |   due to poor test cases that 
- executing a wrong      |   did not cover it all
- test case              |
-                                   
-  
+> [!IMPORTANT]
+> **Error** (by human) $\rightarrow$ **Defect** (in code) $\rightarrow$ **Failure** (observed by user).
+
+---
+
+# ⚠️ Testing Results
+
+## False Positive vs. False Negative
+| Result | Outcome | Reason |
+| :--- | :--- | :--- |
+| **False Positive** | You report a bug, but it **is NOT** a bug. | Often caused by poor test setup or execution errors. |
+| **False Negative** | You report no bugs, but there **IS** a bug. | Often caused by poor test coverage or weak test cases. |
+
+---
+
+## Severity vs. Priority
+* **Severity:** Technical impact (e.g., a crash has *High* severity).
+* **Priority:** Business impact (e.g., a typo on the home page might have *High* priority but *Low* severity).
