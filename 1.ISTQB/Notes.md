@@ -72,3 +72,17 @@ Understanding how a human mistake turns into a user complaint.
 ## Severity vs. Priority
 * **Severity:** Technical impact (e.g., a crash has *High* severity).
 * **Priority:** Business impact (e.g., a typo on the home page might have *High* priority but *Low* severity).
+
+---
+
+## 7 Testing Principles
+* **Testing shows the presence of Defects not their absence:** if you find bugs good, But, If you did not find any bugs doesn't mean software is bugproof.
+* **Exhaustive testing is impossible:** You can't test an input box that accpets numbers to million a million times Get Smart on edge cases.
+* **Early Testing saves Time& Money:** Start Static testing early.
+* **Defects Cluster together:** by experience some features you know bugs will come from so concentrate on making their user story strong.
+* **Beware of pesticide Paradox:** Real bugs gain immunity from same pesticide for a long time, Same if you keep using same test case and data you might not find new bugs.
+* **Test is context dependent:** Testing a social app is different from a trading app .
+* **Absence of errors is Fallacy:** after all testing process you will stil might find a defect in production it is okay.
+
+## 7 Test Process
+* **Testing shows the presence of Defects not their absence:** if you find bugs good, But, If you did not find any bugs doesn't mean software is bugproof.
