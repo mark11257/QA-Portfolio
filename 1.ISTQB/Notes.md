@@ -85,4 +85,4 @@ Understanding how a human mistake turns into a user complaint.
 * **Absence of errors is Fallacy:** after all testing process you will stil might find a defect in production it is okay.
 
 ## 7 Test Process
-* **Testing shows the presence of Defects not their absence:** if you find bugs good, But, If you did not find any bugs doesn't mean software is bugproof.
+* **Organization Test strategy:** A document in which the testing startegy that is agreed on to be followed in the company and is different from a company to another.
