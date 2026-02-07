@@ -84,5 +84,5 @@ Understanding how a human mistake turns into a user complaint.
 * **Test is context dependent:** Testing a social app is different from a trading app .
 * **Absence of errors is Fallacy:** after all testing process you will stil might find a defect in production it is okay.
 
-## 7 Test Process
+## Test Process
 * **Organization Test strategy:** A document in which the testing startegy that is agreed on to be followed in the company and is different from a company to another.
